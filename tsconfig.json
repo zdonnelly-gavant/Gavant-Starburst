@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noEmitOnError": false,
+        "noEmit": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "strictFunctionTypes": false,
+        "baseUrl": ".",
+        "module": "es6",
+        "experimentalDecorators": true,
+        "paths": {
+            "gavant-starburst/tests/*": ["tests/*"],
+            "gavant-starburst/*": ["app/*"],
+            "*": ["types/*"],
+            "fetch": ["node_modules/ember-fetch"]
+        }
+    },
+    "include": ["app/**/*", "tests/**/*", "types/**/*", "mirage/**/*"]
+}
